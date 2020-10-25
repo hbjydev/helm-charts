@@ -3,6 +3,16 @@ entries:
   linkd:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2020-10-25T16:34:43.490982461Z"
+    description: The linkd service, deployed to k8s as a helm chart.
+    digest: 74ec63d6fe458069ec127aff18b0fa81e8f9dc842fc361cc6921c397bc1fba2d
+    name: linkd
+    type: application
+    urls:
+    - https://github.com/hbjydev/helm-charts/releases/download/linkd-0.1.1/linkd-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2020-10-25T16:26:29.474631978Z"
     description: The linkd service, deployed to k8s as a helm chart.
     digest: 8891fd7d96b32bb230efc69537eb33adfdb27167795f43f81c2026c1836080c2
