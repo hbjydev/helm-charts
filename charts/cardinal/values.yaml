@@ -1,0 +1,5 @@
+# A discord authentication token
+token: 'fakeToken'
+
+# What environment to start the bot in
+environment: 'production'

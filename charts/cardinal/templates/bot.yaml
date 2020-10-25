@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-bot
+spec:
+  selector:
+    matchLabels:
+      app: cardinal
+      release: {{ .Release.Name }}
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: cardinal
+        release: {{ .Release.Name }}
+    spec:
+      containers:
+        - name: cardinal
+          image: hbjy/cardinal:latest
+          env:
+            - name: DISCORD_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}-secret
+                  key: discordToken
+            - name: NODE_ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-config
+                  key: environment
