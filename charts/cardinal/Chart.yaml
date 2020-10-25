@@ -2,5 +2,5 @@ apiVersion: v2
 name: cardinal
 description: The Cardinal discord bot, packaged for Helm.
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: 1.0.1
