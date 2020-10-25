@@ -1,0 +1,3 @@
+Thanks for installing {{ .Chart.Name }}!
+
+Please ensure you've set your `token` and `environment` variables!
