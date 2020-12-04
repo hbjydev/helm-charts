@@ -16,15 +16,30 @@ spec:
     spec:
       containers:
         - name: cardinal
-          image: hbjy/cardinal:latest
+          image: hbjy/cardinal:v1.2.0-pre.2
           env:
             - name: DISCORD_TOKEN
               valueFrom:
                 secretKeyRef:
                   name: {{ .Release.Name }}-secret
                   key: discordToken
+            - name: DB_URI
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}-secret
+                  key: databaseUri
+            - name: SENTRY_DSN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}-secret
+                  key: sentryDsn
             - name: NODE_ENV
               valueFrom:
                 configMapKeyRef:
                   name: {{ .Release.Name }}-config
                   key: environment
+            - name: PREFIX
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-config
+                  key: prefix

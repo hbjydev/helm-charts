@@ -3,3 +3,12 @@ token: 'fakeToken'
 
 # What environment to start the bot in
 environment: 'production'
+
+# Sentry DSN
+sentryDsn: 'fakeDsn'
+
+# The PostgreSQL credentials to connect with
+dbUri: 'postgres://cardinal:password@database/cardinal'
+
+# The prefix the bot should use
+prefix: '!'

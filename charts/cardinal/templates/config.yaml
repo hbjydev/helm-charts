@@ -4,3 +4,4 @@ metadata:
   name: {{ .Release.Name }}-config
 data:
   environment: {{ .Values.environment }}
+  prefix: {{ .Values.prefix }}
