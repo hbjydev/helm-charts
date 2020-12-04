@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cardinal
-          image: hbjy/cardinal:v1.2.0-pre.2
+          image: hbjy/cardinal:v1.2.2
           env:
             - name: DISCORD_TOKEN
               valueFrom:

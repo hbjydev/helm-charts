@@ -12,3 +12,6 @@ dbUri: 'postgres://cardinal:password@database/cardinal'
 
 # The prefix the bot should use
 prefix: '!'
+
+# An comma-separated list of bot owners
+botOwners: '1234567890123456'
