@@ -43,3 +43,8 @@ spec:
                 configMapKeyRef:
                   name: {{ .Release.Name }}-config
                   key: prefix
+            - name: OWNERS
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-config
+                  key: botOwners

@@ -5,3 +5,4 @@ metadata:
 data:
   environment: {{ .Values.environment }}
   prefix: {{ .Values.prefix }}
+  owners: {{ .Values.botOwners }}
