@@ -3,6 +3,16 @@ entries:
   cardinal:
   - apiVersion: v2
     appVersion: 1.2.2
+    created: "2021-02-10T20:33:30.029510824Z"
+    description: The Cardinal discord bot, packaged for Helm.
+    digest: f00b0bb46d0ecc36879628461928a993179986a6aa3e536e8cdfbb1ca832d4fa
+    name: cardinal
+    type: application
+    urls:
+    - https://github.com/hbjydev/helm-charts/releases/download/cardinal-0.4.0/cardinal-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 1.2.2
     created: "2020-12-04T18:15:51.262240888Z"
     description: The Cardinal discord bot, packaged for Helm.
     digest: 8efe1bb145fb5c7f97ed101c2c7c9563b506a2300f04827d1b06d4d4a36a5172
