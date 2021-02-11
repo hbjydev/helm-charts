@@ -18,6 +18,11 @@ file.
 | `prefix`      | The command prefix for the bot use   | `'!'`                                              |
 | `botOwners`   | A comma-separated list of bot owners | `'1234567890123456'`                               |
 
+> **NOTE:** The `token`, `sentryDsn` and `dbUri` values are secrets, so must be
+> input as base64-encoded strings. This will be automated at a later date, but
+> for now, you must pass them through a base64 encoder, i.e.
+> `echo -n 'secretToken' | base64 -w 0`
+
 ## Caveats
 
 Of course, as it's a Discord bot, at the moment it cannot auto-scale
